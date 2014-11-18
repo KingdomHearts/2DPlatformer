@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -18,7 +19,7 @@ namespace GXPEngine
 
         bool allowJump = false;
 
-        public Player() : base("E:/Saxion 2D Platformer/First_examplesPics/yellowCube.png")
+        public Player() : base("../../../../First_examplesPics/yellowCube.png")
         {
             this.SetXY(0, game.height - this.width);
         }
@@ -106,7 +107,6 @@ namespace GXPEngine
                 ySpeed = 0;
                 allowJump = true;
             }
-            Console.WriteLine(allowJump);
             if (allowJump)
             {
                 if (Input.GetKeyDown(Key.W) || Input.GetKeyDown(Key.SPACE) || Input.GetKeyDown(Key.UP))

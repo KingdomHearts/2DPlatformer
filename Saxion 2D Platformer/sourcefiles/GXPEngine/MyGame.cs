@@ -13,7 +13,6 @@ public class MyGame : Game
 	
 	void Update () {
 		//empty
-		int bulshit = 1;
 	}
 
 	static void Main() {

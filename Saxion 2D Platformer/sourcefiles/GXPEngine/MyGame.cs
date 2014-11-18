@@ -4,11 +4,11 @@ using System.Drawing;
 
 public class MyGame : Game
 {
-    Player player;
+    Level level;
 	public MyGame () : base(800, 600, false)
 	{
-        player = new Player();
-        this.AddChild(player);
+        level = new Level();
+        AddChild(level);
 	}
 	
 	void Update () {

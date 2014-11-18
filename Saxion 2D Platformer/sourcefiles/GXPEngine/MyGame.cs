@@ -3,12 +3,10 @@ using GXPEngine;
 using System.Drawing;
 
 public class MyGame : Game
-{
-    Level level;
+{	
 	public MyGame () : base(800, 600, false)
 	{
-        level = new Level();
-        AddChild(level);
+		AddChild(new Level());
 	}
 	
 	void Update () {
